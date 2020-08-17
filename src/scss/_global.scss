@@ -1,22 +1,69 @@
 html {
   box-sizing: border-box;
 }
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
-body{
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  min-width: 320px;
-  overflow-x: hidden;
+
+@font-face {
+  font-family: 'Balqis';
+  src: url('..//fonts/Balqis.woff2') format('woff2'),
+  url('..//fonts/Balqis.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
-ul,li{
+
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  min-width: 320px;
+  font-size: 18px;
+  line-height: 21px;
+  overflow-x: hidden;
+  color: black;
+}
+
+ul, li {
   padding-inline-start: 0;
   list-style-type: none;
 }
-a{
-  color: black;
+
+a {
+  color: inherit;
   display: inline-block;
   text-decoration: none;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-section {
+  margin: 200px 0;
+}
+
+.title {
+  font-size: 96px;
+  line-height: 128px;
+  font-family: Balqis, sans-serif;
+  color: $color-title;
+  font-weight: 300;
+  margin-bottom: 100px;
+
+  span {
+    font-size: 24px;
+    line-height: 28px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: italic;
+    color: black;
+    display: block;
+    margin-top: -30px;
+    margin-left: 185px;
+  }
 }

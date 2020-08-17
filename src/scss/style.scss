@@ -1,8 +1,75 @@
 @import "_vars";
 @import "_global";
 
-.header{
+.header {
   background-image: url(../images/top-bg.jpg);
+  height: 100vh;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 72px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.menu-list-item {
+  display: inline-block;
+}
+
+.menu-list-item + .menu-list-item {
+  margin-left: 52px;
+}
+
+.menu-list-item-link {
+  transition: all .5s;
+}
+
+.menu-list-item-link:hover {
+  text-decoration: underline;
+}
+
+.header-phone {
+  padding-left: 40px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/ico-ring.svg);
+    width: 30px;
+    height: 30px;
+    left: 0;
+  }
+}
+
+.header-title {
+  padding-top: 152px;
+  text-align: center;
+  font-size: 250px;
+  line-height: 334px;
+  font-family: Balqis, sans-serif;
+  font-weight: 300;
+
+  span {
+    display: block;
+    text-align: right;
+    font-size: 56px;
+    line-height: 66px;
+    font-style: italic;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: -66px;
+    margin-right: 85px;
+  }
+}
+
+.fairy-tail{
+
 }
 
 
