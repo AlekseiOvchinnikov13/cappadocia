@@ -36,7 +36,8 @@ a {
   padding: 0 15px; }
 
 .page-section {
-  margin: 200px 0; }
+  margin: 200px auto;
+  max-width: 1920px; }
 
 .title {
   font-size: 96px;
@@ -52,8 +53,7 @@ a {
     font-style: italic;
     color: black;
     display: block;
-    margin-top: -30px;
-    margin-left: 185px; }
+    margin-top: -30px; }
 
 .header {
   background-image: url(../images/top-bg.jpg);
@@ -84,6 +84,7 @@ a {
 
 .header-phone {
   padding-left: 40px;
+  padding-top: 20px;
   position: relative; }
   .header-phone:before {
     content: "";
@@ -109,5 +110,90 @@ a {
     font-family: "Roboto Condensed", sans-serif;
     margin-top: -66px;
     margin-right: 85px; }
+
+.fairy-tail-slider {
+  width: 50%; }
+
+.slick-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  z-index: 7; }
+
+.slick-prev {
+  left: 0; }
+
+.slick-next {
+  right: 0; }
+
+.fairy-tail-inner {
+  position: relative; }
+
+.fairy-tail-container, .our-trip-container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+
+.fairy-tail-body {
+  margin-left: auto;
+  width: 50%;
+  padding-left: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%; }
+
+.fairy-tail-body-title {
+  font-weight: 400; }
+
+.fairy-tail-title span {
+  margin-left: 185px; }
+
+.fairy-tail-text {
+  padding: 10px 0; }
+
+.our-trip-inner {
+  position: relative; }
+
+.our-trip-slider {
+  width: 50%;
+  margin-left: auto; }
+
+.our-trip-title span {
+  margin-left: 240px; }
+
+.our-trip-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%; }
+
+.our-trip-list {
+  margin: 5px 0;
+  font-size: 24px;
+  line-height: 28px; }
+  .our-trip-list li:first-child {
+    margin-bottom: 20px;
+    font-weight: 400; }
+
+.our-trip-btn {
+  font-size: 24px;
+  line-height: 28px;
+  border: 1px solid #E2AB3F;
+  padding: 11px 53px; }
+
+.our-trip-content {
+  width: 50%;
+  padding-right: 55px; }
 
 /*# sourceMappingURL=style.css.map */
