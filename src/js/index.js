@@ -1,5 +1,5 @@
-$(function(){
-	/*new WOW({
+$(function () {
+    /*new WOW({
         animateClass: 'animate__animated'
     }).init();*/
     /*$('.header-arrows').on('click', function() {
@@ -10,6 +10,15 @@ $(function(){
         nextArrow: '<button type="button" class="slick-next slick-btn"><img src="images/arrow-next.svg" alt=""></button>',
         autoplay: true,
         autoplaySpeed: 3000,
-        fade: true
+        fade: true,
+        responsive: [
+            {
+                breakpoint: 601,
+                settings:
+                    {
+                        arrows: false
+                    }
+            }
+        ]
     });
 });
