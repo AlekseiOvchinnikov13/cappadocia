@@ -170,6 +170,12 @@
   line-height: 28px;
   border: 1px solid $color-title;
   padding: 11px 53px;
+  transition: all .5s;
+
+  &:hover {
+    background-color: $color-title;
+    color: white;
+  }
 }
 
 .our-trip-content {
@@ -231,7 +237,7 @@
 .price {
   background-image: url(../images/baloon.png);
   background-repeat: no-repeat;
-  background-position: center right 20%;
+  background-position: center right 10%;
 }
 
 .contacts-inner {
@@ -265,27 +271,27 @@
   }
 }
 
-.contacts-price{
+.contacts-price {
   margin-left: 120px;
 }
 
-.contacts-date{
+.contacts-date {
   margin-bottom: 20px;
 }
 
-.contacts-form{
+.contacts-form {
   max-width: 383px;
   margin: 0 auto;
 }
 
-.contacts-form-title{
+.contacts-form-title {
   margin-bottom: 50px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 400;
 }
 
-.contacts-form-input{
+.contacts-form-input {
   border: 1px solid $color-title;
   display: block;
   margin-bottom: 20px;
@@ -295,12 +301,13 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
-  &::placeholder{
+
+  &::placeholder {
     color: black;
   }
 }
 
-.contacts-form-btn{
+.contacts-form-btn {
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
@@ -309,9 +316,15 @@
   background-color: transparent;
   padding: 11px 45px;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-title;
+    color: white;
+  }
+
 }
 
-.footer{
+.footer {
   background-image: url('../images/footer-bg.jpg');
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -319,20 +332,21 @@
   padding-top: 96px;
 }
 
-.footer-inner{
+.footer-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer-text{
+.footer-text {
   font-family: Balqis, sans-serif;
   font-size: 86px;
   line-height: 115px;
   font-weight: 300;
+  align-self: flex-start;
 }
 
-.footer-contacts{
+.footer-contacts {
   width: 356px;
   height: 527px;
   background-image: url('../images/footer-baloon.png');
@@ -341,7 +355,7 @@
   background-size: cover;
 }
 
-.footer-contacts-title{
+.footer-contacts-title {
   font-size: 86px;
   line-height: 115px;
   color: $color-title;
@@ -351,11 +365,12 @@
   margin-top: 71px;
 }
 
-.footer-contacts-phone, .footer-contacts-mail{
+.footer-contacts-phone, .footer-contacts-mail {
   display: inline-block;
   padding-left: 40px;
   position: relative;
-  &:before{
+
+  &:before {
     content: "";
     position: absolute;
     width: 30px;
@@ -364,25 +379,32 @@
     top: -5px;
   }
 }
-.footer-contacts-mail{
-  &:before{
+
+.footer-contacts-mail {
+  &:before {
     background-image: url('../images/ico-mail.svg');
   }
 }
-.footer-contacts-phone{
+
+.footer-contacts-phone {
   margin-bottom: 20px;
-  &:before{
+
+  &:before {
     background-image: url('../images/ico-phone.svg');
   }
 }
 
-.footer-social{
+.footer-social {
   margin-top: 38px;
-  .footer-social-link{
+
+  .footer-social-link {
     margin: 0 7px;
+
+    svg {
+      fill: black;
+    }
   }
 }
-
 
 
 @import "_media";

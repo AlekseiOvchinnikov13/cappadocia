@@ -1,4 +1,22 @@
-@media (max-width: 1240px) {
+@media (max-width: 1440px) {
+  .header-title {
+    padding-top: 0;
+  }
+  .page-section {
+    margin: 100px auto;
+  }
+  .our-trip-title {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1366px) {
+  .header-title {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1280px) {
   .header-title {
     font-size: 180px;
     line-height: 220px;
@@ -8,6 +26,25 @@
       font-size: 50px;
       margin-top: -50px;
     }
+  }
+  .price {
+    background-position: center right 0;
+  }
+  .footer-text {
+    align-self: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-title {
+    padding-top: 300px;
+  }
+
+  .contacts-date span, .contacts-price span {
+    margin-left: 150px;
+  }
+  .footer {
+    height: 60vh;
   }
 }
 
@@ -34,6 +71,9 @@
   }
   .contacts-content {
     margin-bottom: 20px;
+  }
+  .hotel-image {
+    margin-right: 0;
   }
 }
 
@@ -122,10 +162,48 @@
       margin-left: 110px;
     }
   }
-
 }
 
-@media (max-width: 370px) {
+@media (max-width: 414px) {
+  .header-phone {
+    padding-left: 40px;
+    padding-top: 60px;
+    position: relative;
+  }
+  .our-trip-content {
+    width: 100%;
+    padding-right: 0;
+  }
+  .our-trip-btn {
+    margin: 15px auto 0;
+  }
+  .hotel-gallery {
+    justify-content: center;
+  }
+  .footer {
+    height: 100vh;
+  }
+  .footer-contacts {
+    width: 280px;
+    height: 410px;
+    background-size: contain;
+  }
+  .footer-contacts-title {
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 5px;
+    margin-top: 35px;
+  }
+  .footer-text {
+    font-size: 55px;
+    line-height: 60px;
+  }
+  .header-top {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 375px) {
   .header-title {
     font-size: 60px;
     line-height: 100px;
@@ -149,5 +227,8 @@
     span {
       margin-left: 90px;
     }
+  }
+  .contacts-date span, .contacts-price span {
+    margin-left: 120px;
   }
 }
