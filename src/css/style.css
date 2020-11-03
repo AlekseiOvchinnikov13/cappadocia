@@ -19,7 +19,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   overflow-x: hidden;
-  color: black; }
+  color: black;
+  background-color: #fff; }
 
 ul, li {
   padding-inline-start: 0;
